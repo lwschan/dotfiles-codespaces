@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-. ./scripts/git-config.sh
+bash ./scripts/git-config.sh
 
-. ./scripts/install-stow.sh
+bash ./scripts/install-stow.sh
