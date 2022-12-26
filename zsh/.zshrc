@@ -112,3 +112,10 @@ source /workspaces/.codespaces/.persistedshare/dotfiles/zsh/.aliases
 
 # For GKE auth
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# For Terraform
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
+
+# For tfenv
+export PATH="$HOME/.tfenv/bin:$PATH"
