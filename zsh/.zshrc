@@ -109,3 +109,6 @@ source /workspaces/.codespaces/.persistedshare/dotfiles/zsh/.aliases
 
 # Load Kubectl auto completion
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+
+# For GKE auth
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
