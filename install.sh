@@ -8,9 +8,9 @@ sudo apt upgrade -y
 
 bash ./scripts/install-stow.sh
 
-rm $HOME/.zshrc
 
-# Stow ssh files
+# Stow zsh files
+rm $HOME/.zshrc
 stow --verbose --target=$HOME/ --dir=zsh .
 
 # Stow zsh themes
