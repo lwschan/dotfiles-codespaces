@@ -8,6 +8,8 @@ sudo apt upgrade -y
 
 bash ./scripts/install-stow.sh
 
+rm $HOME/.zshrc
+
 # Stow ssh files
 stow --verbose --target=$HOME/ --dir=zsh .
 
